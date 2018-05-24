@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Tipolab View Controller-->
+        <scene sceneID="ZNV-Ni-Lpp">
+            <objects>
+                <viewController id="We9-yc-MUh" customClass="TipolabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9zP-5r-a1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDp-eo-dHo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xe1-42-2GD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5Hg-Lg-45L" appends="YES" id="Ggv-5O-1Af"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSx-Ec-K6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="5Hg-Lg-45L">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="tat-aM-ppK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="544" y="-484"/>
+        </scene>
+        <!--Laboratorio View Controller-->
+        <scene sceneID="8vu-SG-ljg">
+            <objects>
+                <viewController id="MIY-UI-WS0" customClass="LaboratorioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D78-OH-lGf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Omy-Fp-4dM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oLb-A2-pdw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9z2-yW-ZsO" appends="YES" id="edq-Jq-ztA"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXJ-we-hi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="9z2-yW-ZsO">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="BaX-fA-Oud"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1378" y="-282"/>
+        </scene>
+        <!--Profesor View Controller-->
+        <scene sceneID="MVr-5a-jgN">
+            <objects>
+                <viewController id="2oY-sO-g1O" customClass="ProfesorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hdB-KN-ama"/>
+                        <viewControllerLayoutGuide type="bottom" id="0t5-mg-h1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qk2-Ur-7lG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nombre profesor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eH-US-XoS">
+                                <rect key="frame" x="272" y="130" width="158" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="96" y="115" width="158" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkJ-xd-Ljv">
+                                <rect key="frame" x="225" y="194" width="57" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insertar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="179" width="57" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="InsertarProfesorBoton:" destination="2oY-sO-g1O" eventType="touchUpInside" id="e2b-Tq-xSU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-3o-J0r">
+                                <rect key="frame" x="408" y="194" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seleccionar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="179" width="93" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="SeleccionarProfesorBoton:" destination="2oY-sO-g1O" eventType="touchUpInside" id="Ajk-Tx-s28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWD-Hh-Q2N">
+                                <rect key="frame" x="225" y="246" width="78" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Actualizar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="231" width="78" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ActualizarProfesorBoton:" destination="2oY-sO-g1O" eventType="touchUpInside" id="oOO-Xu-kiQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-sO-lWB">
+                                <rect key="frame" x="408" y="246" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eliminar"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="231" width="67" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EliminarProfesorBoton:" destination="2oY-sO-g1O" eventType="touchUpInside" id="FhH-M7-3t5"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cA6-kl-OoV">
+                                <rect key="frame" x="225" y="333" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="318" width="240" height="128"/>
+                                </variation>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="id profesor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54k-dh-7lj">
+                                <rect key="frame" x="290" y="74" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="59" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hgg-F0-TIg" appends="YES" id="xgl-J5-BcM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="ProfesoresTableView" destination="cA6-kl-OoV" id="aLr-ni-1ZJ"/>
+                        <outlet property="idProfesorField" destination="54k-dh-7lj" id="HOe-Ly-oNe"/>
+                        <outlet property="nombreProfesorField" destination="2eH-US-XoS" id="3u5-po-sq1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZM4-NY-Aua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Hgg-F0-TIg">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="lYB-Bm-RwK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1754" y="488"/>
+        </scene>
+        <!--Reservacion View Controller-->
+        <scene sceneID="6ZQ-fK-P3C">
+            <objects>
+                <viewController id="tse-u5-80G" customClass="ReservacionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ch1-it-cCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Icg-Te-VZF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUz-mO-wXX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="F8w-n2-qur" appends="YES" id="cBh-5i-ku9"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCa-za-DwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="F8w-n2-qur">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="OWV-5T-KyL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="196" y="1267"/>
+        </scene>
+        <!--Materias View Controller-->
+        <scene sceneID="2kg-MI-dYl">
+            <objects>
+                <viewController id="y0k-2k-r8W" customClass="MateriasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9N-nf-4zB"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8t-AT-Dr6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uwM-SM-mZN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zYZ-pI-TtT" appends="YES" id="4OQ-pi-P2n"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKd-aV-fAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zYZ-pI-TtT">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="247-VJ-Hiv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1166" y="1300"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profesores.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-EC-vLu">
+                                <rect key="frame" x="36" y="251" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reservacion.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WKd-vu-uQM">
+                                <rect key="frame" x="187" y="416" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2nj-xU-0Yt">
+                                <rect key="frame" x="317" y="76" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="materias.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IgQ-8g-PkB">
+                                <rect key="frame" x="317" y="251" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESERVA DE LCOMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-W1-yWB">
+                                <rect key="frame" x="220" y="28" width="174" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIPO DE LABORATORIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4na-FB-AFB">
+                                <rect key="frame" x="65" y="206" width="183" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABORATORIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdJ-pN-X4I">
+                                <rect key="frame" x="374" y="206" width="115" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROFESOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvn-mL-UZy">
+                                <rect key="frame" x="101" y="380" width="87" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MATERIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oog-pL-enB">
+                                <rect key="frame" x="391" y="380" width="81" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESERVACION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ux-Vs-plQ">
+                                <rect key="frame" x="244" y="544" width="113" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tipoLabs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ylK-Cc-2Wn">
+                                <rect key="frame" x="36" y="76" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LAX-3X-5ig" appends="YES" id="Ppr-gj-LpR"/>
+                            <outletCollection property="gestureRecognizers" destination="Xnf-Mx-YSc" appends="YES" id="yk3-Dc-mDB"/>
+                            <outletCollection property="gestureRecognizers" destination="LZo-Ia-bWg" appends="YES" id="2IZ-li-lI5"/>
+                            <outletCollection property="gestureRecognizers" destination="kEB-BT-l01" appends="YES" id="qhe-ls-H7W"/>
+                            <outletCollection property="gestureRecognizers" destination="vJ7-Hf-UO1" appends="YES" id="kKs-SV-0Im"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="LAX-3X-5ig">
+                    <connections>
+                        <segue destination="We9-yc-MUh" kind="modal" id="p5p-ht-XTI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Xnf-Mx-YSc">
+                    <connections>
+                        <segue destination="MIY-UI-WS0" kind="modal" id="lJT-VR-yRu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="LZo-Ia-bWg">
+                    <connections>
+                        <segue destination="2oY-sO-g1O" kind="modal" id="sMa-0W-lAn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="kEB-BT-l01">
+                    <connections>
+                        <segue destination="y0k-2k-r8W" kind="modal" id="twt-Nd-xTZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" numberOfTouchesRequired="2" id="vJ7-Hf-UO1">
+                    <connections>
+                        <segue destination="tse-u5-80G" kind="modal" id="wfO-Yp-mBl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="245" y="350"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="labs.jpg" width="259" height="194"/>
+        <image name="materias.jpg" width="225" height="225"/>
+        <image name="profesores.jpg" width="225" height="225"/>
+        <image name="reservacion.jpg" width="218" height="231"/>
+        <image name="tipoLabs.jpg" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lYB-Bm-RwK"/>
+    </inferredMetricsTieBreakers>
+</document>
