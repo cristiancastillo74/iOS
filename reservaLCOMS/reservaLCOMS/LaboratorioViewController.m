@@ -7,14 +7,14 @@
 //
 
 #import "LaboratorioViewController.h"
+
 #import "controlBD.h"
 
 @interface LaboratorioViewController ()
 {
     NSMutableArray *arrayLaboratorio;
     sqlite3 *reservaBD;
-    NSString *dbPathString;
-}
+    NSString *dbPathString;}
 @end
 
 @implementation LaboratorioViewController

@@ -341,6 +341,83 @@
                     <view key="view" contentMode="scaleToFill" id="dUz-mO-wXX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="335-xX-fDz">
+                                <rect key="frame" x="180" y="318" width="63" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insertar"/>
+                                <connections>
+                                    <action selector="InsertarReservacionBoton:" destination="tse-u5-80G" eventType="touchUpInside" id="pRK-eI-DpT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSf-sl-LYR">
+                                <rect key="frame" x="339" y="318" width="81" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <action selector="ConsultarReservacionAction:" destination="tse-u5-80G" eventType="touchUpInside" id="VPy-Wp-aNX"/>
+                                    <action selector="ConsultarReservacionBoton:" destination="tse-u5-80G" eventType="touchUpInside" id="JB5-cR-Awn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZb-XM-zU8">
+                                <rect key="frame" x="180" y="363" width="81" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="ActualizarReservacionBoton:" destination="tse-u5-80G" eventType="touchUpInside" id="xMi-jY-A7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sa-83-KnA">
+                                <rect key="frame" x="355" y="363" width="65" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="EliminarReservacionAction:" destination="tse-u5-80G" eventType="touchUpInside" id="P6r-rH-Ydd"/>
+                                    <action selector="EliminarReservacionBoton:" destination="tse-u5-80G" eventType="touchUpInside" id="aYT-m5-Cp1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de reservacion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hO6-dO-kfi">
+                                <rect key="frame" x="20" y="20" width="186" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id del Profesor encarado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-JS-6z4">
+                                <rect key="frame" x="20" y="77" width="186" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo Materia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-md-oun">
+                                <rect key="frame" x="20" y="128" width="126" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo de laboratorio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-KM-SCV">
+                                <rect key="frame" x="20" y="176" width="186" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id Horario " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E17-Bl-U9c">
+                                <rect key="frame" x="20" y="228" width="126" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="id Dia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="al8-5T-Jna">
+                                <rect key="frame" x="20" y="279" width="126" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-sQ-go1">
+                                <rect key="frame" x="108" y="413" width="386" height="167"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -348,6 +425,17 @@
                             <outletCollection property="gestureRecognizers" destination="F8w-n2-qur" appends="YES" id="cBh-5i-ku9"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="ActualizarReservacionAction" destination="xZb-XM-zU8" id="ZiS-r3-Ovw"/>
+                        <outlet property="ConsultarReservacionAction" destination="iSf-sl-LYR" id="tc9-UJ-FO1"/>
+                        <outlet property="ReservacionTableView" destination="bpe-sQ-go1" id="R3W-Ad-LxN"/>
+                        <outlet property="codLabField" destination="RAo-KM-SCV" id="qI6-3B-HZZ"/>
+                        <outlet property="codMateriaField" destination="Lse-md-oun" id="ZQ8-5R-kiv"/>
+                        <outlet property="idDiaFIeld" destination="al8-5T-Jna" id="Oax-38-0nd"/>
+                        <outlet property="idHorarioField" destination="E17-Bl-U9c" id="Are-lQ-W0L"/>
+                        <outlet property="idProfesorField" destination="yo1-JS-6z4" id="jsT-96-4Ai"/>
+                        <outlet property="idReservacionField" destination="hO6-dO-kfi" id="Psi-K6-xzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCa-za-DwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="F8w-n2-qur">
@@ -370,11 +458,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-8r-9ti">
-                                <rect key="frame" x="180" y="459" width="240" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo de asignatura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-oe-po8">
                                 <rect key="frame" x="42" y="28" width="170" height="30"/>
                                 <animations/>
@@ -425,6 +508,11 @@
                                     <action selector="EliminarMateriaBoton:" destination="y0k-2k-r8W" eventType="touchUpInside" id="rgJ-WK-eve"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-8r-9ti">
+                                <rect key="frame" x="127" y="441" width="350" height="146"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

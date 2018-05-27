@@ -7,9 +7,14 @@
 //
 
 #import "ReservacionViewController.h"
-
+#import "controlBD.h"
 @interface ReservacionViewController ()
-
+{
+    NSMutableArray *arrayReservacion;
+    sqlite3 *reservaBD;
+    NSString *dbPathString;
+    
+}
 @end
 
 @implementation ReservacionViewController
@@ -34,4 +39,20 @@
 }
 */
 
+- (IBAction)InsertarReservacionBoton:(id)sender {
+}
+
+- (IBAction)ConsultarReservacionBoton:(id)sender {
+}
+
+- (IBAction)ConsultarReservacionAction:(id)sender {
+}
+
+- (IBAction)ActualizarReservacionBoton:(id)sender {
+}
+
+- (IBAction)EliminarReservacionBoton:(id)sender {
+}
+- (IBAction)EliminarReservacionAction:(id)sender {
+}
 @end
