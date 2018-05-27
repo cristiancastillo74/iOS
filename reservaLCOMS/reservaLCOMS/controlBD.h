@@ -11,6 +11,8 @@
 
 @interface controlBD : NSObject
 
+
+
 @property (strong,nonatomic) NSString *dbPath;
 +(controlBD *) sharedInstance;
 -(void) crearOabrirBD;

@@ -16,6 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="Xe1-42-2GD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id Tipo Laboratorio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WRI-fp-2cm">
+                                <rect key="frame" x="13" y="20" width="148" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del tipo lab" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3oS-Bv-pFq">
+                                <rect key="frame" x="13" y="66" width="148" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ram" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-F5-qJh">
+                                <rect key="frame" x="13" y="114" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sistemas Operativos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17l-dt-EW6">
+                                <rect key="frame" x="13" y="161" width="271" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capacidad del disco" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="938-Ng-AoB">
+                                <rect key="frame" x="13" y="212" width="160" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Procesador" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-jI-mWZ">
+                                <rect key="frame" x="13" y="264" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YW-4q-fqp">
+                                <rect key="frame" x="152" y="303" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insertar"/>
+                                <connections>
+                                    <action selector="InsertarTipoLabBoton:" destination="We9-yc-MUh" eventType="touchUpInside" id="y8Y-c7-4c1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDd-H3-9G4">
+                                <rect key="frame" x="354" y="303" width="92" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <action selector="ConsultarTipoLabBoton:" destination="We9-yc-MUh" eventType="touchUpInside" id="dKJ-LB-fvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Li-7c-3cB">
+                                <rect key="frame" x="152" y="354" width="84" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="ActualizarTipoLabBoton:" destination="We9-yc-MUh" eventType="touchUpInside" id="vQ0-aw-AaW"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="11S-4u-hrV">
+                                <rect key="frame" x="111" y="392" width="378" height="188"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-je-Acf">
+                                <rect key="frame" x="378" y="354" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="EliminarTipoLabBoton:" destination="We9-yc-MUh" eventType="touchUpInside" id="3ki-Sg-cGR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -23,6 +98,21 @@
                             <outletCollection property="gestureRecognizers" destination="5Hg-Lg-45L" appends="YES" id="Ggv-5O-1Af"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="ActualizarTipoLabBoton" destination="0Li-7c-3cB" id="vfS-2s-LC9"/>
+                        <outlet property="ConsultarTipoLabBoton" destination="nDd-H3-9G4" id="kBW-3d-q9y"/>
+                        <outlet property="EliminarTipoLabBoton" destination="MZt-je-Acf" id="0dr-YS-SKO"/>
+                        <outlet property="InsertarTipoLabBoton" destination="0YW-4q-fqp" id="K3S-gb-EtV"/>
+                        <outlet property="TipoLabTableView" destination="11S-4u-hrV" id="AI7-sE-h37"/>
+                        <outlet property="TipolabView" destination="11S-4u-hrV" id="iFY-fr-IfU"/>
+                        <outlet property="capacidadDiscoField" destination="938-Ng-AoB" id="wgX-Fy-7kZ"/>
+                        <outlet property="idTipoLabField" destination="WRI-fp-2cm" id="2p5-IM-yX9"/>
+                        <outlet property="nomTipoLab" destination="3oS-Bv-pFq" id="Hw2-DJ-YQj"/>
+                        <outlet property="nomTipoLabField" destination="3oS-Bv-pFq" id="vvO-r8-BO3"/>
+                        <outlet property="procesadorField" destination="9VM-jI-mWZ" id="wal-sz-WSi"/>
+                        <outlet property="ramField" destination="bIe-F5-qJh" id="TF7-Th-JLD"/>
+                        <outlet property="sistemasOpeField" destination="17l-dt-EW6" id="I44-IR-Hol"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSx-Ec-K6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="5Hg-Lg-45L">
@@ -44,6 +134,69 @@
                     <view key="view" contentMode="scaleToFill" id="oLb-A2-pdw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo de laboratorio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erR-WM-oj2">
+                                <rect key="frame" x="28" y="28" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id del tipo de lab" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ilo-Fs-qyP">
+                                <rect key="frame" x="28" y="82" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cupo del laboratorio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6zi-QE-Sw8">
+                                <rect key="frame" x="28" y="145" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Planta en que se hubica" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="al4-ty-jLg">
+                                <rect key="frame" x="28" y="207" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0u-a7-fKp">
+                                <rect key="frame" x="337" y="285" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="ActualizarLaboratorioBoton:" destination="MIY-UI-WS0" eventType="touchUpInside" id="9z4-Ev-wtt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo8-FW-glb">
+                                <rect key="frame" x="170" y="336" width="85" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <action selector="ConsultarLaboratorioBoton:" destination="MIY-UI-WS0" eventType="touchUpInside" id="rTk-fy-zuV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-em-1yJ">
+                                <rect key="frame" x="362" y="336" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="EliminarLaboratorioBoton:" destination="MIY-UI-WS0" eventType="touchUpInside" id="cNh-Py-ABt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-hu-Rdh">
+                                <rect key="frame" x="170" y="426" width="260" height="146"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEw-8x-19Y">
+                                <rect key="frame" x="170" y="285" width="72" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insertar"/>
+                                <connections>
+                                    <action selector="InsertarLaboratorioBoton:" destination="MIY-UI-WS0" eventType="touchUpInside" id="fkM-Rc-GH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -51,6 +204,17 @@
                             <outletCollection property="gestureRecognizers" destination="9z2-yW-ZsO" appends="YES" id="edq-Jq-ztA"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="CodLab" destination="erR-WM-oj2" id="rE4-B0-FcL"/>
+                        <outlet property="CodLabField" destination="erR-WM-oj2" id="aUg-Ay-wkD"/>
+                        <outlet property="IdTipoLabField" destination="Ilo-Fs-qyP" id="UfW-3Q-X3Z"/>
+                        <outlet property="LaboratorioTableView" destination="g5L-hu-Rdh" id="BBi-8o-VV3"/>
+                        <outlet property="cupo" destination="6zi-QE-Sw8" id="Uac-dD-EXO"/>
+                        <outlet property="cupoField" destination="6zi-QE-Sw8" id="bMe-oi-3KZ"/>
+                        <outlet property="idTipoLab" destination="Ilo-Fs-qyP" id="UfG-6m-8kv"/>
+                        <outlet property="planta" destination="al4-ty-jLg" id="H2u-ad-L2B"/>
+                        <outlet property="plantaField" destination="al4-ty-jLg" id="L6l-qD-RFL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXJ-we-hi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="9z2-yW-ZsO">
@@ -205,6 +369,63 @@
                     <view key="view" contentMode="scaleToFill" id="uwM-SM-mZN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-8r-9ti">
+                                <rect key="frame" x="180" y="459" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo de asignatura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-oe-po8">
+                                <rect key="frame" x="42" y="28" width="170" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de asignatura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wk-H2-PgV">
+                                <rect key="frame" x="42" y="90" width="170" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ciclo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4D-MX-0gp">
+                                <rect key="frame" x="42" y="155" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eny-JA-23U">
+                                <rect key="frame" x="180" y="285" width="81" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Insertar"/>
+                                <connections>
+                                    <action selector="InsertarMateriaBoton:" destination="y0k-2k-r8W" eventType="touchUpInside" id="DDf-K9-sfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-mJ-adc">
+                                <rect key="frame" x="327" y="285" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seleccionar"/>
+                                <connections>
+                                    <action selector="ConsultarMateriaBoton:" destination="y0k-2k-r8W" eventType="touchUpInside" id="yKR-PX-K3W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-hF-qh1">
+                                <rect key="frame" x="180" y="356" width="81" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="ActualizarMateriaBoton:" destination="y0k-2k-r8W" eventType="touchUpInside" id="9MA-PQ-hJk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nON-Qe-QJy">
+                                <rect key="frame" x="352" y="359" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="EliminarMateriaBoton:" destination="y0k-2k-r8W" eventType="touchUpInside" id="rgJ-WK-eve"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -212,6 +433,15 @@
                             <outletCollection property="gestureRecognizers" destination="zYZ-pI-TtT" appends="YES" id="4OQ-pi-P2n"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="EliminarMateriaBoton" destination="nON-Qe-QJy" id="kPO-uk-slb"/>
+                        <outlet property="MateriasTableView" destination="fvj-8r-9ti" id="BUo-Dc-Dwv"/>
+                        <outlet property="cicloField" destination="v4D-MX-0gp" id="f20-48-Btu"/>
+                        <outlet property="codAsignaturaField" destination="UfC-oe-po8" id="Lbc-JN-9R5"/>
+                        <outlet property="codMateriaField" destination="UfC-oe-po8" id="6p3-DY-xsK"/>
+                        <outlet property="nomAsignaturaField" destination="8wk-H2-PgV" id="RYo-t3-tii"/>
+                        <outlet property="nomMateriaField" destination="8wk-H2-PgV" id="dci-Jg-cfP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKd-aV-fAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="zYZ-pI-TtT">
@@ -347,6 +577,6 @@
         <image name="tipoLabs.jpg" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lYB-Bm-RwK"/>
+        <segue reference="247-VJ-Hiv"/>
     </inferredMetricsTieBreakers>
 </document>

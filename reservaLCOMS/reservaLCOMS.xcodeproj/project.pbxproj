@@ -28,6 +28,9 @@
 		41D3E23B20B1134A00D80781 /* reservaLCOMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3E23A20B1134A00D80781 /* reservaLCOMSTests.m */; };
 		41D3E24620B1134A00D80781 /* reservaLCOMSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3E24520B1134A00D80781 /* reservaLCOMSUITests.m */; };
 		41D3E25420B113D300D80781 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D3E25320B113D300D80781 /* libsqlite3.0.tbd */; };
+		55D64B4920B9F3ED004FCB1D /* TipoLab.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4820B9F3ED004FCB1D /* TipoLab.m */; };
+		55D64B4C20BA0A1D004FCB1D /* Laboratorio.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */; };
+		55D64B4F20BA76AC004FCB1D /* Materia.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4E20BA76AC004FCB1D /* Materia.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,12 @@
 		41D3E24520B1134A00D80781 /* reservaLCOMSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reservaLCOMSUITests.m; sourceTree = "<group>"; };
 		41D3E24720B1134A00D80781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D3E25320B113D300D80781 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		55D64B4720B9F3ED004FCB1D /* TipoLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipoLab.h; sourceTree = "<group>"; };
+		55D64B4820B9F3ED004FCB1D /* TipoLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipoLab.m; sourceTree = "<group>"; };
+		55D64B4A20BA0A1D004FCB1D /* Laboratorio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laboratorio.h; sourceTree = "<group>"; };
+		55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Laboratorio.m; sourceTree = "<group>"; };
+		55D64B4D20BA76AC004FCB1D /* Materia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Materia.h; sourceTree = "<group>"; };
+		55D64B4E20BA76AC004FCB1D /* Materia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Materia.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +173,12 @@
 				4154ACCE20B2254900DA9797 /* controlBD.m */,
 				4175F63420B5733D00861A0B /* Profesor.h */,
 				4175F63520B5733D00861A0B /* Profesor.m */,
+				55D64B4720B9F3ED004FCB1D /* TipoLab.h */,
+				55D64B4820B9F3ED004FCB1D /* TipoLab.m */,
+				55D64B4A20BA0A1D004FCB1D /* Laboratorio.h */,
+				55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */,
+				55D64B4D20BA76AC004FCB1D /* Materia.h */,
+				55D64B4E20BA76AC004FCB1D /* Materia.m */,
 			);
 			path = reservaLCOMS;
 			sourceTree = "<group>";
@@ -331,14 +346,17 @@
 			files = (
 				41D3E22820B1134A00D80781 /* ViewController.m in Sources */,
 				41D3E22520B1134A00D80781 /* AppDelegate.m in Sources */,
+				55D64B4C20BA0A1D004FCB1D /* Laboratorio.m in Sources */,
 				4154ACC620B207E300DA9797 /* ProfesorViewController.m in Sources */,
 				4154ACC920B2080800DA9797 /* ReservacionViewController.m in Sources */,
 				4154ACCC20B2082500DA9797 /* TipolabViewController.m in Sources */,
 				4175F63620B5733D00861A0B /* Profesor.m in Sources */,
+				55D64B4F20BA76AC004FCB1D /* Materia.m in Sources */,
 				41D3E22220B1134A00D80781 /* main.m in Sources */,
 				4154ACCF20B2254900DA9797 /* controlBD.m in Sources */,
 				4154ACC320B207BE00DA9797 /* MateriasViewController.m in Sources */,
 				4154ACC020B2079D00DA9797 /* LaboratorioViewController.m in Sources */,
+				55D64B4920B9F3ED004FCB1D /* TipoLab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
