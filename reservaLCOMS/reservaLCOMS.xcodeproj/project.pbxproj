@@ -31,7 +31,6 @@
 		55D64B4920B9F3ED004FCB1D /* TipoLab.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4820B9F3ED004FCB1D /* TipoLab.m */; };
 		55D64B4C20BA0A1D004FCB1D /* Laboratorio.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */; };
 		55D64B4F20BA76AC004FCB1D /* Materia.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B4E20BA76AC004FCB1D /* Materia.m */; };
-		55D64B5220BA9BEC004FCB1D /* Reservacion.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D64B5120BA9BEC004FCB1D /* Reservacion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +93,6 @@
 		55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Laboratorio.m; sourceTree = "<group>"; };
 		55D64B4D20BA76AC004FCB1D /* Materia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Materia.h; sourceTree = "<group>"; };
 		55D64B4E20BA76AC004FCB1D /* Materia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Materia.m; sourceTree = "<group>"; };
-		55D64B5020BA9BEC004FCB1D /* Reservacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reservacion.h; sourceTree = "<group>"; };
-		55D64B5120BA9BEC004FCB1D /* Reservacion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reservacion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +179,6 @@
 				55D64B4B20BA0A1D004FCB1D /* Laboratorio.m */,
 				55D64B4D20BA76AC004FCB1D /* Materia.h */,
 				55D64B4E20BA76AC004FCB1D /* Materia.m */,
-				55D64B5020BA9BEC004FCB1D /* Reservacion.h */,
-				55D64B5120BA9BEC004FCB1D /* Reservacion.m */,
 			);
 			path = reservaLCOMS;
 			sourceTree = "<group>";
@@ -362,7 +357,6 @@
 				4154ACC320B207BE00DA9797 /* MateriasViewController.m in Sources */,
 				4154ACC020B2079D00DA9797 /* LaboratorioViewController.m in Sources */,
 				55D64B4920B9F3ED004FCB1D /* TipoLab.m in Sources */,
-				55D64B5220BA9BEC004FCB1D /* Reservacion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
